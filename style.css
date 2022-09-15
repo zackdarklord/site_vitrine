@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Joti+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Snippet&display=swap');
+
+*{
+    cursor: cell;
+    scroll-behavior: smooth; 
+}
+
+body{
+    margin:0;
+    padding:0;
+    font-family: "Snippet",sans-serif;
+    overflow-y: scroll;
+}
+
+nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(230, 205, 173);
+    background-color: red;
+}
+nav h1{
+    color:white;
+    font-family: "Joti One",sans-serif;
+    font-size: 30px;
+}
+
+nav .onglets a{
+    text-decoration: none;
+    color:white;
+    margin-right: 10px;
+    border-bottom:1px solid white;
+    padding-bottom: 5px;
+    font-size: 20px;
+
+
+}
+nav .onglets{
+    margin-top: 3px;
+    margin-left: 300px;
+}
+@media screen and (max-width:680px){
+    nav .onglets{
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: url('images/header2.webp');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 40px;
+    border-bottom:5px solid rgb(230, 205, 173); ;
+}
+header:hover{
+    background-position: bottom;
+}
+header h1:hover{
+    color:tomato;
+}
+header h4:hover{
+    color:tomato;
+    border-bottom: 1px solid tomato;
+}
+header h1{
+    font-family: "Joti One",sans-serif;
+    font-size: 50px;
+   
+}
+
+header h4{
+    margin-top: -20px;
+    font-size: 20px;
+    text-align: center;
+    border-bottom: 1px solid white;
+   
+}
+
+header button{
+padding:10px 20px;
+background-color: tomato;
+color: white;
+border: none;
+font-size: 20px;
+font-family:"Joti One",sans-serif ;
+cursor: pointer;
+}
+
+header button:hover{
+background-color: white;
+color: tomato;
+}
+.main
+{
+    border-top: 40px solid rgba(230, 205, 173,0);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-image: url('images/background.jpg') ;
+    background-size: cover;
+   background-attachment: fixed;
+   border-bottom: 40px solid rgba(230, 205, 173,0);
+  
+  
+}
+
+.main .content .card .right img{
+height: 300px;
+width: 400px;
+margin-top: 5px;
+border-radius: 0 30px 30px;
+}
+
+.main .content .card
+{
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px ;
+    
+
+}
+
+.main .content .card:hover
+{
+    
+margin-left: 100px;  
+cursor:pointer ; 
+
+}
+
+
+.main .content .card .left
+{
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: red;
+    color: white;
+    border-bottom: 5px solid rgb(230, 205, 173);
+    
+  
+}
+
+.main .content .card .left:hover
+{
+    background-color: rgb(255, 72, 0);
+    
+  
+}
+
+.main .content .card.right
+{
+    flex: 0 0 70%;
+}
+
+footer{
+    
+    border-top: 5px solid rgb(230, 205, 173);
+    background-color: red;
+    color: white;
+    padding: 30px 100px;
+}
+
+footer h1{
+    font-family:"Joti One",sans-serif ; 
+    border-bottom: 1px solid white;
+    width: 20%;
+    padding-bottom: 5px;
+}
+footer .coordonnes{
+    margin-top: -10px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  
+}
+footer .coordonnes .cordonne{
+    margin-right: 30px;
+    padding : 10px;
+}
+
+footer .coordonnes .cordonne p{
+    max-width: 300px;
+}
+
+footer .phone{
+
+opacity: 80%;
+}
+
+nav .onglets a:hover
+{
+ 
+color:rgb(243, 109, 0);
+border-bottom: 1px solid rgb(243, 109, 0););
+cursor: pointer;
+
+
+}
+
+footer:hover{
+    background-image: url('../web/images/footer2.webp');
+    background-position: right;
+    background-size: cover;
+    color:aliceblue;
+}
+.container-form{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   background-color: red;
+   justify-content: center;
+   align-items: center;
+   border-radius: 30px;
+   margin-top: 50px;
+}
+
+.container-form h1{
+   
+   font-family: "Joti One",serif;
+   color: white;
+}
+
+.container-form .droite img{
+height: 300px;
+width: 400px;
+margin-top: 20px;
+border-radius: 30px;
+}
+
+.contenu-form{
+display: flex;
+}
+
+.droite{
+    flex: 0 0 30%;
+    display: flex;
+    flex-direction: column;
+}
+.gauche{
+    flex: 0 0 70%;
+}
+
+.input-form{
+    text-align: center;
+    margin: 10px;
+   
+}
+
+.input-form input{
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow:0 2px 2px 0 rgba(0, 0, 0, 0.514);
+}
+
+.input-form button{
+    height: 30px;
+    width: 200px;
+    background-color: tomato;
+    color: white;
+    border-style: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-family: "Joti One",serif;
+    cursor: pointer;
+}
+
+.input-form button:hover{
+    background-color: white;
+    color: tomato;
+}
+
